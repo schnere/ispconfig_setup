@@ -11,6 +11,12 @@ We'll use only to inform you on new version of the script :)
 
 
 # Version #
+
+<b>v.3.0.6</b>
+
+* Added support for Ubuntu 20.04 Focal Fossa
+  * Please note that ISPConfig does not officially support Ubuntu 20.04 yet!
+  
 <b>v.3.0.5</b>
 
 Debian 10 changes file path for root use : 
