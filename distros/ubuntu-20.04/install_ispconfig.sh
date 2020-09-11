@@ -5,8 +5,8 @@
 InstallISPConfig() {
   echo "Installing ISPConfig3... "
   cd /tmp
-  wget -q https://www.ispconfig.org/downloads/ISPConfig-3-stable.tar.gz
-  tar xfz ISPConfig-3-stable.tar.gz
+  wget -q http://www.ispconfig.org/downloads/ISPConfig-3.2b1.tar.gz
+  tar xfz ISPConfig-3.2b1.tar.gz
   cd ispconfig3_install/install/
   if [ "$CFG_ISPC" == "standard" ]; then
   	  echo "Create INI file"
