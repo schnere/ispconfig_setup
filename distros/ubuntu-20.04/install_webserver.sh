@@ -59,7 +59,13 @@ InstallWebServer() {
 	a2enmod fastcgi > /dev/null 2>&1
 	a2enmod proxy_fcgi > /dev/null 2>&1
 	a2enmod alias > /dev/null 2>&1
+	a2enmod headers > /dev/null 2>&1
 	# a2enmod fcgid > /dev/null 2>&1
+
+	# https://www.howtoforge.com/tutorial/httpoxy-protect-your-server/
+	echo -e "<IfModule mod_headers.c>\n    RequestHeader unset Proxy early\n</IfModule>" > /etc/apache2/conf-available/httpoxy.conf
+	a2enconf httpoxy > /dev/null 2>&1
+
 	echo -e "[${green}DONE${NC}]\n"
 	echo -n "Restarting Apache... "
 	service apache2 restart
