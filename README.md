@@ -12,14 +12,18 @@ We'll use only to inform you on new version of the script :)
 
 # Version #
 
-<b>v.3.0.6</b>
+<b>v.3.0.7</b>
 
 * Added support for Ubuntu 20.04 Focal Fossa
-  * Please note that ISPConfig does not officially support Ubuntu 20.04 yet!
   
+<b>v.3.0.6</b>
+
+Debian 10 fix for Debian 10
+
 <b>v.3.0.5</b>
 
-Debian 10 changes file path for root use : 
+Debian 10 changes file path, for root use :
+
 	su -
 	
 Added support for Debian 10 Buster and php7.3
@@ -31,7 +35,7 @@ Added support for Debian 10 Buster and php7.3
 This is a system to automate the installation of ISPConfig 3 control Panel ( http://www.ispconfig.org/page/home.html ).
 
 Tested on:
-
+- Debian 10 Busty ([Servisys VPS](https://www.servisys.it/), VmWare Esxi, Amazon AWS, Virtualbox, OVH VPS, Hetzner, Digital Ocean)
 - Debian 9 Stretch ([Servisys VPS](https://www.servisys.it/), VmWare Esxi, Amazon AWS, Virtualbox, OVH VPS, Hetzner, Digital Ocean)
 - Debian 8 Jessie ([Servisys VPS](https://www.servisys.it/), VmWare Esxi, Amazon AWS, Virtualbox, OVH VPS, Hetzner, Digital Ocean)
 - Debian 7 Wheezy ([Servisys VPS](https://www.servisys.it/), VmWare Esxi, Amazon AWS, Virtualbox, OVH VPS, Hetzner, Digital Ocean)
@@ -52,6 +56,7 @@ Before starting, be sure to follow one of these guides to install a supported Li
 - Debian 7: https://www.howtoforge.com/tutorial/debian-7-wheezy-minimal-server/
 - Debian 8: https://www.howtoforge.com/tutorial/debian-8-jessie-minimal-server/
 - Debian 9: https://www.howtoforge.com/tutorial/debian-minimal-server/
+- Debain 10: https://www.howtoforge.com/tutorial/debian-10-buster-minimal-server/
 - Ubuntu 14.10: https://www.howtoforge.com/tutorial/ubuntu-14.10-utopic-unicorn-server
 - Ubuntu 15.10: https://www.howtoforge.com/tutorial/ubuntu-15.10-wily-werewolf-minimal-server/
 - Ubuntu 16.04: https://www.howtoforge.com/tutorial/ubuntu-16.04-xenial-xerus-minimal-server/
@@ -65,7 +70,7 @@ Before starting, be sure to follow one of these guides to install a supported Li
 	<tr>
 		<td rowspan="2"><strong>Component</strong></td>
 		<td rowspan="2"><strong>Software</strong></td>
-		<td colspan="3"><strong>Debian/Raspbian</strong></td>
+		<td colspan="4"><strong>Debian/Raspbian</strong></td>
 		<td colspan="6"><strong>Ubuntu</strong></td>
 		<td><strong>CentOS</strong></td>
 		<td colspan="2"><strong>openSUSE Leap</strong></td>
@@ -74,7 +79,8 @@ Before starting, be sure to follow one of these guides to install a supported Li
 	<tr>
 		<td>7</td>
 		<td>8</td>
-		<td>9</td>
+        <td>9</td>
+        <td>10</td>
 		<td>14.04</td>
 		<td>15.10</td>
 		<td>16.04</td>
@@ -91,7 +97,8 @@ Before starting, be sure to follow one of these guides to install a supported Li
 		<td>Apache</td>
 		<td>✔</td>
 		<td>✔</td>
-		<td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
 		<td>✔</td>
 		<td>✔</td>
 		<td>✔</td>
@@ -107,7 +114,8 @@ Before starting, be sure to follow one of these guides to install a supported Li
 		<td>nginx</td>
 		<td>✔</td>
 		<td>✔</td>
-		<td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
 		<td>✔</td>
 		<td>✔</td>
 		<td>✔</td>
@@ -124,8 +132,9 @@ Before starting, be sure to follow one of these guides to install a supported Li
 		<td>Postfix</td>
 		<td>✔</td>
 		<td>✔</td>
-		<td>✔</td>
-		<td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
 		<td>✔</td>
 		<td>✔</td>
 		<td>✔</td>
@@ -141,7 +150,8 @@ Before starting, be sure to follow one of these guides to install a supported Li
 		<td>Courier</td>
 		<td>✔</td>
 		<td></td>
-		<td></td>
+        <td></td>
+        <td></td>
 		<td>✔</td>
 		<td>✔</td>
 		<td>✔</td>
@@ -157,7 +167,8 @@ Before starting, be sure to follow one of these guides to install a supported Li
 		<td>Dovecot</td>
 		<td>✔</td>
 		<td>✔</td>
-		<td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
 		<td>✔</td>
 		<td>✔</td>
 		<td>✔</td>
@@ -174,7 +185,8 @@ Before starting, be sure to follow one of these guides to install a supported Li
 		<td>Pure-FTPd</td>
 		<td>✔</td>
 		<td>✔</td>
-		<td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
 		<td>✔</td>
 		<td>✔</td>
 		<td>✔</td>
@@ -191,7 +203,8 @@ Before starting, be sure to follow one of these guides to install a supported Li
 		<td>Bind</td>
 		<td>✔</td>
 		<td>✔</td>
-		<td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
 		<td>✔</td>
 		<td>✔</td>
 		<td>✔</td>
@@ -207,7 +220,8 @@ Before starting, be sure to follow one of these guides to install a supported Li
 		<td>PowerDNS</td>
 		<td></td>
 		<td></td>
-		<td></td>
+        <td></td>
+        <td></td>
 		<td></td>
 		<td></td>
 		<td></td>
@@ -223,7 +237,8 @@ Before starting, be sure to follow one of these guides to install a supported Li
 		<td>MyDNS</td>
 		<td></td>
 		<td></td>
-		<td></td>
+        <td></td>
+        <td></td>
 		<td></td>
 		<td></td>
 		<td></td>
@@ -240,7 +255,8 @@ Before starting, be sure to follow one of these guides to install a supported Li
 		<td>MySQL</td>
 		<td>✔</td>
 		<td>✔</td>
-		<td></td>
+        <td></td>
+        <td></td>
 		<td>✔</td>
 		<td>✔</td>
 		<td>✔</td>
@@ -256,7 +272,8 @@ Before starting, be sure to follow one of these guides to install a supported Li
 		<td>MariaDB</td>
 		<td></td>
 		<td>✔</td>
-		<td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
 		<td>✔</td>
 		<td>✔</td>
 		<td>✔</td>
@@ -273,7 +290,8 @@ Before starting, be sure to follow one of these guides to install a supported Li
 		<td>Roundcube</td>
 		<td>✔</td>
 		<td>✔</td>
-		<td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
 		<td></td>
 		<td></td>
 		<td>✔*</td>
@@ -289,7 +307,8 @@ Before starting, be sure to follow one of these guides to install a supported Li
 		<td>SquirrelMail</td>
 		<td>✔</td>
 		<td>✔</td>
-		<td>✔</td>
+        <td>✔</td>
+        <td></td>
 		<td>✔</td>
 		<td>✔</td>
 		<td>✔*</td>
@@ -306,7 +325,8 @@ Before starting, be sure to follow one of these guides to install a supported Li
 		<td>Metronome</td>
 		<td></td>
 		<td></td>
-		<td></td>
+        <td></td>
+        <td></td>
 		<td>✔</td>
 		<td>✔</td>
 		<td>✔</td>
@@ -323,7 +343,8 @@ Before starting, be sure to follow one of these guides to install a supported Li
 		<td>Mailman</td>
 		<td></td>
 		<td></td>
-		<td></td>
+        <td></td>
+        <td></td>
 		<td></td>
 		<td></td>
 		<td></td>
@@ -340,7 +361,8 @@ Before starting, be sure to follow one of these guides to install a supported Li
 		<td>Amavisd</td>
 		<td>✔</td>
 		<td>✔</td>
-		<td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
 		<td>✔</td>
 		<td>✔</td>
 		<td>✔</td>
@@ -356,7 +378,8 @@ Before starting, be sure to follow one of these guides to install a supported Li
 		<td>ClamAV</td>
 		<td>✔</td>
 		<td>✔</td>
-		<td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
 		<td>✔</td>
 		<td>✔</td>
 		<td>✔</td>
@@ -373,7 +396,8 @@ Before starting, be sure to follow one of these guides to install a supported Li
 		<td>SpamAssassin</td>
 		<td>✔</td>
 		<td>✔</td>
-		<td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
 		<td>✔</td>
 		<td>✔</td>
 		<td>✔</td>
@@ -390,7 +414,8 @@ Before starting, be sure to follow one of these guides to install a supported Li
 		<td>Postgrey</td>
 		<td></td>
 		<td>✔</td>
-		<td>✔</td>
+        <td>✔</td>
+        <td></td>
 		<td></td>
 		<td></td>
 		<td>✔</td>
@@ -407,7 +432,8 @@ Before starting, be sure to follow one of these guides to install a supported Li
 		<td>OpenDKIM</td>
 		<td></td>
 		<td>✔</td>
-		<td>✔</td>
+        <td>✔</td>
+        <td></td>
 		<td>✔</td>
 		<td>✔</td>
 		<td>✔</td>
@@ -423,7 +449,8 @@ Before starting, be sure to follow one of these guides to install a supported Li
 		<td>OpenDMARC</td>
 		<td></td>
 		<td>✔</td>
-		<td>✔</td>
+        <td>✔</td>
+        <td></td>
 		<td>✔</td>
 		<td>✔</td>
 		<td>✔</td>
@@ -440,7 +467,8 @@ Before starting, be sure to follow one of these guides to install a supported Li
 		<td>UFW</td>
 		<td></td>
 		<td>✔</td>
-		<td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
 		<td></td>
 		<td></td>
 		<td>✔</td>
@@ -457,7 +485,8 @@ Before starting, be sure to follow one of these guides to install a supported Li
 		<td>Fail2Ban</td>
 		<td>✔</td>
 		<td>✔</td>
-		<td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
 		<td>✔</td>
 		<td>✔</td>
 		<td>✔</td>
@@ -474,7 +503,8 @@ Before starting, be sure to follow one of these guides to install a supported Li
 		<td>rkhunter</td>
 		<td>✔</td>
 		<td>✔</td>
-		<td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
 		<td>✔</td>
 		<td>✔</td>
 		<td>✔</td>
@@ -491,7 +521,8 @@ Before starting, be sure to follow one of these guides to install a supported Li
 		<td>Webalizer</td>
 		<td>✔</td>
 		<td>✔</td>
-		<td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
 		<td>✔</td>
 		<td>✔</td>
 		<td>✔</td>
@@ -507,7 +538,8 @@ Before starting, be sure to follow one of these guides to install a supported Li
 		<td>AWStats</td>
 		<td>✔</td>
 		<td>✔</td>
-		<td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
 		<td>✔</td>
 		<td>✔</td>
 		<td>✔</td>
@@ -524,7 +556,8 @@ Before starting, be sure to follow one of these guides to install a supported Li
 		<td>Quota</td>
 		<td>✔</td>
 		<td>✔</td>
-		<td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
 		<td>✔</td>
 		<td>✔</td>
 		<td>✔</td>
@@ -541,7 +574,8 @@ Before starting, be sure to follow one of these guides to install a supported Li
 		<td>Certbot/letsencrypt</td>
 		<td>✔</td>
 		<td>✔</td>
-		<td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
 		<td>✔</td>
 		<td>✔</td>
 		<td>✔</td>
@@ -558,7 +592,8 @@ Before starting, be sure to follow one of these guides to install a supported Li
 		<td>Jailkit</td>
 		<td>✔</td>
 		<td>✔</td>
-		<td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
 		<td>✔</td>
 		<td>✔</td>
 		<td>✔</td>
@@ -575,7 +610,8 @@ Before starting, be sure to follow one of these guides to install a supported Li
 		<td>HHVM</td>
 		<td></td>
 		<td>✔^</td>
-		<td>✔^</td>
+        <td>✔^</td>
+        <td></td>
 		<td>✔</td>
 		<td>✔</td>
 		<td>✔</td>
@@ -591,7 +627,8 @@ Before starting, be sure to follow one of these guides to install a supported Li
 		<td>MultiServer</td>
 		<td></td>
 		<td></td>
-		<td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
 		<td></td>
 		<td></td>
 		<td></td>
@@ -622,17 +659,17 @@ You can choose during install:
 
 Follow one of the above guides to install a fresh copy of a supported Linux distribution.
 
-Run the following command:
+Run the following command as root user:
 
-* Debian/Raspbian 7, 8 and 9 and Ubuntu 14.04, 15.10, 16.04, 16.10 and 18.04
+* Debian/Raspbian 7, 8, 9 and 10 and Ubuntu 14.04, 15.10, 16.04, 16.10 and 18.04
 
 ```shell
-cd /tmp; wget -O installer.tgz "https://github.com/servisys/ispconfig_setup/tarball/master"; tar zxvf installer.tgz; cd *ispconfig*; sudo bash install.sh
+cd /tmp; wget -O installer.tgz "https://github.com/servisys/ispconfig_setup/tarball/master"; tar zxvf installer.tgz; cd *ispconfig*; bash install.sh
 ```
 * CentOS 7
 
 ```shell
-cd /tmp; sudo yum install wget unzip net-tools; wget -O installer.tgz "https://github.com/servisys/ispconfig_setup/tarball/master"; tar zxvf installer.tgz; cd *ispconfig*; sudo bash install.sh
+cd /tmp; sudo yum install wget unzip net-tools; wget -O installer.tgz "https://github.com/servisys/ispconfig_setup/tarball/master"; tar zxvf installer.tgz; cd *ispconfig*; sudo install.sh
 ```
 
 CentOS 7 is in a very early stage, we got to test a bit, any help will be appreciated. 
